@@ -1,0 +1,396 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 23.11      1.01     1.01 115999827     0.00     0.00  vec3::operator*(float) const
+ 17.73      1.78     0.78 111683529     0.00     0.00  vec3::operator-(vec3 const&) const
+ 10.41      2.24     0.46 73633534     0.00     0.00  distanceFromSphere(vec3 const&, vec3 const&, float)
+  8.70      2.62     0.38 36816767     0.00     0.00  distanceFromPlane(vec3 const&, vec3 const&, vec3 const&)
+  8.47      2.99     0.37 39283223     0.00     0.00  vec3::operator+(vec3 const&) const
+  6.64      3.28     0.29 112300143     0.00     0.00  norm(vec3 const&)
+  5.26      3.51     0.23 149116910     0.00     0.00  std::sqrt(float)
+  3.89      3.68     0.17 36816767     0.00     0.00  hitScene(vec3 const&)
+  3.20      3.82     0.14 38666609     0.00     0.00  normalize(vec3 const&)
+  2.75      3.94     0.12 38049995     0.00     0.00  vec3::operator*(vec3 const&) const
+  2.75      4.06     0.12 36816767     0.00     0.00  smooth_min(float, float, float)
+  2.75      4.18     0.12 36816767     0.00     0.00  float const& std::min<float>(float const&, float const&)
+  1.60      4.25     0.07  1166400     0.00     0.00  rayMarching(Ray, float (*)(vec3 const&))
+  1.14      4.30     0.05 36816767     0.00     0.00  std::abs(float)
+  0.46      4.32     0.02  1166400     0.00     0.00  SandBox::fragment(float, float)
+  0.46      4.34     0.02   616614     0.00     0.00  calculateNormal(vec3 const&)
+  0.23      4.35     0.01  1233228     0.00     0.00  float const& std::max<float>(float const&, float const&)
+  0.23      4.36     0.01        1     0.01     0.01  printImage(unsigned char*, unsigned short, unsigned short)
+  0.23      4.37     0.01        1     0.01     4.37  Application::run()
+  0.00      4.37     0.00        3     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const
+  0.00      4.37     0.00        2     0.00     0.00  std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const
+  0.00      4.37     0.00        2     0.00     0.00  std::chrono::duration<double, std::ratio<1l, 1000l> >::count() const
+  0.00      4.37     0.00        2     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&)
+  0.00      4.37     0.00        1     0.00     0.00  createApplication()
+  0.00      4.37     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      4.37     0.00        1     0.00     0.00  Application::Application(unsigned short, unsigned short)
+  0.00      4.37     0.00        1     0.00     0.00  Application::~Application()
+  0.00      4.37     0.00        1     0.00     0.01  SandBox::onExit()
+  0.00      4.37     0.00        1     0.00     0.00  SandBox::onAttach()
+  0.00      4.37     0.00        1     0.00     0.00  SandBox::onUpdate(float)
+  0.00      4.37     0.00        1     0.00     0.00  SandBox::SandBox()
+  0.00      4.37     0.00        1     0.00     0.00  SandBox::~SandBox()
+  0.00      4.37     0.00        1     0.00     0.00  SandBox::~SandBox()
+  0.00      4.37     0.00        1     0.00     0.00  std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_point()
+  0.00      4.37     0.00        1     0.00     0.00  std::enable_if<std::chrono::__is_duration<std::chrono::duration<double, std::ratio<1l, 1000l> > >::value, std::chrono::duration<double, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<double, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+  0.00      4.37     0.00        1     0.00     0.00  std::chrono::duration_values<long>::zero()
+  0.00      4.37     0.00        1     0.00     0.00  std::chrono::duration<double, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<double, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, double, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+  0.00      4.37     0.00        1     0.00     0.00  std::chrono::duration<double, std::ratio<1l, 1000l> >::duration<double, void>(double const&)
+  0.00      4.37     0.00        1     0.00     0.00  std::chrono::duration<double, std::ratio<1l, 1000l> >::duration<long, std::ratio<1l, 1000000000l>, void>(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+  0.00      4.37     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000000000l> >::zero()
+  0.00      4.37     0.00        1     0.00     0.00  std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)
+  0.00      4.37     0.00        1     0.00     0.00  std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.23% of 4.37 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    4.37                 main [1]
+                0.01    4.36       1/1           Application::run() [2]
+                0.00    0.00       1/1           createApplication() [32]
+                0.00    0.00       1/1           SandBox::~SandBox() [39]
+-----------------------------------------------
+                0.01    4.36       1/1           main [1]
+[2]    100.0    0.01    4.36       1         Application::run() [2]
+                0.02    4.33 1166400/1166400     SandBox::fragment(float, float) [3]
+                0.00    0.01       1/1           SandBox::onExit() [21]
+                0.00    0.00       1/1           SandBox::onAttach() [36]
+                0.00    0.00       1/1           SandBox::onUpdate(float) [37]
+-----------------------------------------------
+                0.02    4.33 1166400/1166400     Application::run() [2]
+[3]     99.5    0.02    4.33 1166400         SandBox::fragment(float, float) [3]
+                0.07    3.85 1166400/1166400     rayMarching(Ray, float (*)(vec3 const&)) [4]
+                0.02    0.33  616614/616614      calculateNormal(vec3 const&) [13]
+                0.00    0.02 1233228/38666609     normalize(vec3 const&) [10]
+                0.01    0.00 1233228/115999827     vec3::operator*(float) const [8]
+                0.01    0.00 1233228/1233228     float const& std::max<float>(float const&, float const&) [19]
+                0.01    0.00 1233228/111683529     vec3::operator-(vec3 const&) const [9]
+                0.01    0.00  616614/39283223     vec3::operator+(vec3 const&) const [12]
+                0.00    0.00 1233228/38049995     vec3::operator*(vec3 const&) const [16]
+-----------------------------------------------
+                0.07    3.85 1166400/1166400     SandBox::fragment(float, float) [3]
+[4]     89.8    0.07    3.85 1166400         rayMarching(Ray, float (*)(vec3 const&)) [4]
+                0.16    3.07 34350311/36816767     hitScene(vec3 const&) [5]
+                0.32    0.00 34350311/39283223     vec3::operator+(vec3 const&) const [12]
+                0.30    0.00 34350311/115999827     vec3::operator*(float) const [8]
+-----------------------------------------------
+                0.01    0.22 2466456/36816767     calculateNormal(vec3 const&) [13]
+                0.16    3.07 34350311/36816767     rayMarching(Ray, float (*)(vec3 const&)) [4]
+[5]     79.3    0.17    3.29 36816767         hitScene(vec3 const&) [5]
+                0.38    1.35 36816767/36816767     distanceFromPlane(vec3 const&, vec3 const&, vec3 const&) [6]
+                0.46    0.81 73633534/73633534     distanceFromSphere(vec3 const&, vec3 const&, float) [7]
+                0.12    0.06 36816767/36816767     smooth_min(float, float, float) [15]
+                0.12    0.00 36816767/36816767     float const& std::min<float>(float const&, float const&) [17]
+-----------------------------------------------
+                0.38    1.35 36816767/36816767     hitScene(vec3 const&) [5]
+[6]     39.5    0.38    1.35 36816767         distanceFromPlane(vec3 const&, vec3 const&, vec3 const&) [6]
+                0.13    0.47 36816767/38666609     normalize(vec3 const&) [10]
+                0.32    0.00 36816767/115999827     vec3::operator*(float) const [8]
+                0.26    0.00 36816767/111683529     vec3::operator-(vec3 const&) const [9]
+                0.12    0.00 36816767/38049995     vec3::operator*(vec3 const&) const [16]
+                0.05    0.00 36816767/36816767     std::abs(float) [18]
+-----------------------------------------------
+                0.46    0.81 73633534/73633534     hitScene(vec3 const&) [5]
+[7]     29.1    0.46    0.81 73633534         distanceFromSphere(vec3 const&, vec3 const&, float) [7]
+                0.51    0.00 73633534/111683529     vec3::operator-(vec3 const&) const [9]
+                0.19    0.11 73633534/112300143     norm(vec3 const&) [11]
+-----------------------------------------------
+                0.01    0.00 1233228/115999827     SandBox::fragment(float, float) [3]
+                0.04    0.00 4932912/115999827     calculateNormal(vec3 const&) [13]
+                0.30    0.00 34350311/115999827     rayMarching(Ray, float (*)(vec3 const&)) [4]
+                0.32    0.00 36816767/115999827     distanceFromPlane(vec3 const&, vec3 const&, vec3 const&) [6]
+                0.34    0.00 38666609/115999827     normalize(vec3 const&) [10]
+[8]     23.1    1.01    0.00 115999827         vec3::operator*(float) const [8]
+-----------------------------------------------
+                0.01    0.00 1233228/111683529     SandBox::fragment(float, float) [3]
+                0.26    0.00 36816767/111683529     distanceFromPlane(vec3 const&, vec3 const&, vec3 const&) [6]
+                0.51    0.00 73633534/111683529     distanceFromSphere(vec3 const&, vec3 const&, float) [7]
+[9]     17.7    0.78    0.00 111683529         vec3::operator-(vec3 const&) const [9]
+-----------------------------------------------
+                0.00    0.01  616614/38666609     calculateNormal(vec3 const&) [13]
+                0.00    0.02 1233228/38666609     SandBox::fragment(float, float) [3]
+                0.13    0.47 36816767/38666609     distanceFromPlane(vec3 const&, vec3 const&, vec3 const&) [6]
+[10]    14.6    0.14    0.50 38666609         normalize(vec3 const&) [10]
+                0.34    0.00 38666609/115999827     vec3::operator*(float) const [8]
+                0.10    0.06 38666609/112300143     norm(vec3 const&) [11]
+-----------------------------------------------
+                0.10    0.06 38666609/112300143     normalize(vec3 const&) [10]
+                0.19    0.11 73633534/112300143     distanceFromSphere(vec3 const&, vec3 const&, float) [7]
+[11]    10.6    0.29    0.17 112300143         norm(vec3 const&) [11]
+                0.17    0.00 112300143/149116910     std::sqrt(float) [14]
+-----------------------------------------------
+                0.01    0.00  616614/39283223     SandBox::fragment(float, float) [3]
+                0.04    0.00 4316298/39283223     calculateNormal(vec3 const&) [13]
+                0.32    0.00 34350311/39283223     rayMarching(Ray, float (*)(vec3 const&)) [4]
+[12]     8.5    0.37    0.00 39283223         vec3::operator+(vec3 const&) const [12]
+-----------------------------------------------
+                0.02    0.33  616614/616614      SandBox::fragment(float, float) [3]
+[13]     7.9    0.02    0.33  616614         calculateNormal(vec3 const&) [13]
+                0.01    0.22 2466456/36816767     hitScene(vec3 const&) [5]
+                0.04    0.00 4932912/115999827     vec3::operator*(float) const [8]
+                0.04    0.00 4316298/39283223     vec3::operator+(vec3 const&) const [12]
+                0.00    0.01  616614/38666609     normalize(vec3 const&) [10]
+-----------------------------------------------
+                0.06    0.00 36816767/149116910     smooth_min(float, float, float) [15]
+                0.17    0.00 112300143/149116910     norm(vec3 const&) [11]
+[14]     5.3    0.23    0.00 149116910         std::sqrt(float) [14]
+-----------------------------------------------
+                0.12    0.06 36816767/36816767     hitScene(vec3 const&) [5]
+[15]     4.0    0.12    0.06 36816767         smooth_min(float, float, float) [15]
+                0.06    0.00 36816767/149116910     std::sqrt(float) [14]
+-----------------------------------------------
+                0.00    0.00 1233228/38049995     SandBox::fragment(float, float) [3]
+                0.12    0.00 36816767/38049995     distanceFromPlane(vec3 const&, vec3 const&, vec3 const&) [6]
+[16]     2.7    0.12    0.00 38049995         vec3::operator*(vec3 const&) const [16]
+-----------------------------------------------
+                0.12    0.00 36816767/36816767     hitScene(vec3 const&) [5]
+[17]     2.7    0.12    0.00 36816767         float const& std::min<float>(float const&, float const&) [17]
+-----------------------------------------------
+                0.05    0.00 36816767/36816767     distanceFromPlane(vec3 const&, vec3 const&, vec3 const&) [6]
+[18]     1.1    0.05    0.00 36816767         std::abs(float) [18]
+-----------------------------------------------
+                0.01    0.00 1233228/1233228     SandBox::fragment(float, float) [3]
+[19]     0.2    0.01    0.00 1233228         float const& std::max<float>(float const&, float const&) [19]
+-----------------------------------------------
+                0.01    0.00       1/1           SandBox::onExit() [21]
+[20]     0.2    0.01    0.00       1         printImage(unsigned char*, unsigned short, unsigned short) [20]
+-----------------------------------------------
+                0.00    0.01       1/1           Application::run() [2]
+[21]     0.2    0.00    0.01       1         SandBox::onExit() [21]
+                0.01    0.00       1/1           printImage(unsigned char*, unsigned short, unsigned short) [20]
+                0.00    0.00       1/1           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&) [48]
+                0.00    0.00       1/1           std::chrono::duration<double, std::ratio<1l, 1000l> >::duration<long, std::ratio<1l, 1000000000l>, void>(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [46]
+                0.00    0.00       1/2           std::chrono::duration<double, std::ratio<1l, 1000l> >::count() const [30]
+-----------------------------------------------
+                0.00    0.00       1/3           std::chrono::duration<double, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<double, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, double, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [44]
+                0.00    0.00       2/3           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [49]
+[28]     0.0    0.00    0.00       3         std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [28]
+-----------------------------------------------
+                0.00    0.00       2/2           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&) [48]
+[29]     0.0    0.00    0.00       2         std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const [29]
+-----------------------------------------------
+                0.00    0.00       1/2           SandBox::onExit() [21]
+                0.00    0.00       1/2           std::chrono::duration<double, std::ratio<1l, 1000l> >::duration<long, std::ratio<1l, 1000000000l>, void>(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [46]
+[30]     0.0    0.00    0.00       2         std::chrono::duration<double, std::ratio<1l, 1000l> >::count() const [30]
+-----------------------------------------------
+                0.00    0.00       1/2           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::zero() [47]
+                0.00    0.00       1/2           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [49]
+[31]     0.0    0.00    0.00       2         std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&) [31]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[32]     0.0    0.00    0.00       1         createApplication() [32]
+                0.00    0.00       1/1           SandBox::SandBox() [38]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__Z11rayMarching3RayPFfRK4vec3E [50]
+[33]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [33]
+-----------------------------------------------
+                0.00    0.00       1/1           SandBox::SandBox() [38]
+[34]     0.0    0.00    0.00       1         Application::Application(unsigned short, unsigned short) [34]
+-----------------------------------------------
+                0.00    0.00       1/1           SandBox::~SandBox() [40]
+[35]     0.0    0.00    0.00       1         Application::~Application() [35]
+-----------------------------------------------
+                0.00    0.00       1/1           Application::run() [2]
+[36]     0.0    0.00    0.00       1         SandBox::onAttach() [36]
+-----------------------------------------------
+                0.00    0.00       1/1           Application::run() [2]
+[37]     0.0    0.00    0.00       1         SandBox::onUpdate(float) [37]
+-----------------------------------------------
+                0.00    0.00       1/1           createApplication() [32]
+[38]     0.0    0.00    0.00       1         SandBox::SandBox() [38]
+                0.00    0.00       1/1           Application::Application(unsigned short, unsigned short) [34]
+                0.00    0.00       1/1           std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_point() [41]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[39]     0.0    0.00    0.00       1         SandBox::~SandBox() [39]
+                0.00    0.00       1/1           SandBox::~SandBox() [40]
+-----------------------------------------------
+                0.00    0.00       1/1           SandBox::~SandBox() [39]
+[40]     0.0    0.00    0.00       1         SandBox::~SandBox() [40]
+                0.00    0.00       1/1           Application::~Application() [35]
+-----------------------------------------------
+                0.00    0.00       1/1           SandBox::SandBox() [38]
+[41]     0.0    0.00    0.00       1         std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_point() [41]
+                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::zero() [47]
+-----------------------------------------------
+                0.00    0.00       1/1           std::chrono::duration<double, std::ratio<1l, 1000l> >::duration<long, std::ratio<1l, 1000000000l>, void>(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [46]
+[42]     0.0    0.00    0.00       1         std::enable_if<std::chrono::__is_duration<std::chrono::duration<double, std::ratio<1l, 1000l> > >::value, std::chrono::duration<double, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<double, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [42]
+                0.00    0.00       1/1           std::chrono::duration<double, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<double, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, double, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [44]
+-----------------------------------------------
+                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::zero() [47]
+[43]     0.0    0.00    0.00       1         std::chrono::duration_values<long>::zero() [43]
+-----------------------------------------------
+                0.00    0.00       1/1           std::enable_if<std::chrono::__is_duration<std::chrono::duration<double, std::ratio<1l, 1000l> > >::value, std::chrono::duration<double, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<double, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [42]
+[44]     0.0    0.00    0.00       1         std::chrono::duration<double, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<double, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, double, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [44]
+                0.00    0.00       1/3           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [28]
+                0.00    0.00       1/1           std::chrono::duration<double, std::ratio<1l, 1000l> >::duration<double, void>(double const&) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           std::chrono::duration<double, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<double, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, double, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [44]
+[45]     0.0    0.00    0.00       1         std::chrono::duration<double, std::ratio<1l, 1000l> >::duration<double, void>(double const&) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           SandBox::onExit() [21]
+[46]     0.0    0.00    0.00       1         std::chrono::duration<double, std::ratio<1l, 1000l> >::duration<long, std::ratio<1l, 1000000000l>, void>(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [46]
+                0.00    0.00       1/1           std::enable_if<std::chrono::__is_duration<std::chrono::duration<double, std::ratio<1l, 1000l> > >::value, std::chrono::duration<double, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<double, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [42]
+                0.00    0.00       1/2           std::chrono::duration<double, std::ratio<1l, 1000l> >::count() const [30]
+-----------------------------------------------
+                0.00    0.00       1/1           std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_point() [41]
+[47]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1000000000l> >::zero() [47]
+                0.00    0.00       1/1           std::chrono::duration_values<long>::zero() [43]
+                0.00    0.00       1/2           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&) [31]
+-----------------------------------------------
+                0.00    0.00       1/1           SandBox::onExit() [21]
+[48]     0.0    0.00    0.00       1         std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&) [48]
+                0.00    0.00       2/2           std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const [29]
+                0.00    0.00       1/1           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [49]
+-----------------------------------------------
+                0.00    0.00       1/1           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&) [48]
+[49]     0.0    0.00    0.00       1         std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [49]
+                0.00    0.00       2/3           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [28]
+                0.00    0.00       1/2           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&) [31]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [20] printImage(unsigned char*, unsigned short, unsigned short) [21] SandBox::onExit() [41] std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_point()
+  [15] smooth_min(float, float, float) [3] SandBox::fragment(float, float) [42] std::enable_if<std::chrono::__is_duration<std::chrono::duration<double, std::ratio<1l, 1000l> > >::value, std::chrono::duration<double, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<double, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+   [4] rayMarching(Ray, float (*)(vec3 const&)) [36] SandBox::onAttach() [43] std::chrono::duration_values<long>::zero()
+  [13] calculateNormal(vec3 const&) [37] SandBox::onUpdate(float) [44] std::chrono::duration<double, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<double, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, double, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+  [32] createApplication()    [38] SandBox::SandBox()     [45] std::chrono::duration<double, std::ratio<1l, 1000l> >::duration<double, void>(double const&)
+   [6] distanceFromPlane(vec3 const&, vec3 const&, vec3 const&) [39] SandBox::~SandBox() [46] std::chrono::duration<double, std::ratio<1l, 1000l> >::duration<long, std::ratio<1l, 1000000000l>, void>(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+   [7] distanceFromSphere(vec3 const&, vec3 const&, float) [40] SandBox::~SandBox() [47] std::chrono::duration<long, std::ratio<1l, 1000000000l> >::zero()
+  [33] __static_initialization_and_destruction_0(int, int) (Sandbox.cpp) [9] vec3::operator-(vec3 const&) const [31] std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&)
+  [11] norm(vec3 const&)      [16] vec3::operator*(vec3 const&) const [48] std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)
+   [5] hitScene(vec3 const&)   [8] vec3::operator*(float) const [49] std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+  [10] normalize(vec3 const&) [12] vec3::operator+(vec3 const&) const [18] std::abs(float)
+   [2] Application::run()     [29] std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const [19] float const& std::max<float>(float const&, float const&)
+  [34] Application::Application(unsigned short, unsigned short) [30] std::chrono::duration<double, std::ratio<1l, 1000l> >::count() const [17] float const& std::min<float>(float const&, float const&)
+  [35] Application::~Application() [28] std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [14] std::sqrt(float)
